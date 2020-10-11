@@ -1,7 +1,12 @@
+from bitarray import bitarray
+
 class BloomFilter:
     def __init__(self, f_len):
         self.filter_len = f_len
-        # создаём битовый массив длиной f_len ...
+        # создаём битовый массив длиной f_len
+        bit_array = bitarray(self.filter_len)
+        bit_array.setall(0)
+
 
     def hash1(self, str1):
         for c int str1:
